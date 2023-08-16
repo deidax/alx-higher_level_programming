@@ -3,5 +3,9 @@ import random
 
 
 number = random.randint(-10, 10)
-s = "{:d} is positive".format(number) if number > 0 else ("{:d} is negative".format(number) if number < 0 else "is zero")
-print(s)
+if number > 0:
+    print("{:d} is positive".format(number))
+elif number < 0:
+    print("{:d} is negative".format(number))
+else:
+    print("is zero")
